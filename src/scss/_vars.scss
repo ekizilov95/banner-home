@@ -1,0 +1,29 @@
+// COLORS //
+$color-black: #000;
+$color-white: #fff;
+$color-aquamarine: #91f8c8;
+$color-cardinal: #c82222;
+
+// FONTS //
+$ff-oswald: "Oswald";
+$ff-helvetica: "Helvetica";
+
+// FUNCTIONS //
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+  @return (strip-unit($num) / 15) * 1rem;
+}
+
+// VARIABLE //
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$base: rem(4px);
+
+// BREAKPOINTS //
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
